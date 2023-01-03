@@ -12,6 +12,7 @@ public class Board {
 		pieces = new Piece[rows][columns];
 	}
 
+<<<<<<< HEAD
 	public int getRows() {
 		return rows;
 	}
@@ -29,4 +30,6 @@ public class Board {
 	}
 	
 
+=======
+>>>>>>> af7a9f8a0accad9245b26cb94b35517e3446e4eb
 }
