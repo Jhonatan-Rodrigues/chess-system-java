@@ -18,4 +18,8 @@ public class Piece {
 		this.board = board;
 	}
 
+	public Position getPosition() {
+		return position;
+	}
+
 }
