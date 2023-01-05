@@ -7,7 +7,7 @@ public class Board {
 	private Piece[][] pieces;
 
 	public Board(int rows, int columns) {
-		if (rows < 0 || columns < 0) {
+		if (rows < 1 || columns < 1) {
 			throw new BoardException("Error creating board: there must be at least 1 row and 1 column");
 		}
 		this.rows = rows;
@@ -23,6 +23,7 @@ public class Board {
 		return columns;
 	}
 
+	//retorna uma peça dada uma linha e uma coluna//
 	public Piece piece(int row, int column) {
 		if (!positionExists(row, column)) {
 			throw new BoardException("Position not on the board");
@@ -30,6 +31,7 @@ public class Board {
 		return pieces[row][column];
 	}
 
+	// sobrecarga do método acima e retorna a posição da peça//
 	public Piece piece(Position position) {
 		if (!positionExists(position)) {
 			throw new BoardException("Position not on the board");
